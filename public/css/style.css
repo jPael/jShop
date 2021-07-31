@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    font-size: 2vw;
+}
+body {
+    background: rgb(255, 244, 219);
+}
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background: rgb(235, 177, 177);
+    padding: 0.1rem;
+    margin-bottom: 0.3rem;
+}
+
+#header #branding {
+    height: 1rem;
+
+    background-image: url(../img/brand.png);
+    background-size: cover;
+    /* background-color: white; */
+    background-blend-mode: multiply;
+
+    cursor: pointer;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    margin: 0 0.5rem;
+}
+
+#main-content {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#drawArea {
+    border: 1px solid rgb(218, 218, 218);
+    box-shadow: 0 0 10px grey;
+
+    background: white;
+}
+
+#board {
+    /* border: 1px solid black; */
+    display: inline-block;
+}
+
+#players {
+    display: inline-block;
+    /* border: 1px solid black; */
+    width: 49%;
+    height: inherit;
+}
+.player {
+    display: flex;
+    flex-direction: row;
+}
+
+.player div {
+    margin-right: 0.5rem;
+}
+
+.playerItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background: white;
+    border: 3px solid rgb(221, 217, 199);
+    padding: 0.3rem 0.3rem;
+    margin: 0.1rem 0.1rem;
+
+    text-transform: capitalize;
+}
+
+#actions {
+    border: 1px solid black;
+}
