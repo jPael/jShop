@@ -7,6 +7,7 @@
         <title>Enter Code</title>
         <link rel="stylesheet" href="css/style.css" />
         <script src="js/app.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
     </head>
     <body>
         <div id="header">
@@ -40,8 +41,29 @@
             </div>
         </div>
 
-        <div id="actions">
-            <div>asdsad</div>
+        <div id="bottomBar">
+            <div id="actions">
+                <div id="brush">
+                    <div class="brush" id="pen">Pen</div>
+                    <div class="brush" id="eraser">Eraser All</div>
+                    <div class="brush" id="send">Send</div>
+                </div>
+                <div id="colors">
+                    <div class="colors" id="red"></div>
+                    <div class="colors" id="blue"></div>
+                    <div class="colors" id="white"></div>
+                    <div class="colors" id="black"></div>
+                </div>
+                <div id="brushSize">
+                    <input id="size" type="range" min="1" max="30" value="5" />
+                </div>
+            </div>
+            <div>
+                <span>Draw: </span>
+                <span id="task">Yoyo</span>
+            </div>
         </div>
+
+        <script src="/socket.io/socket.io.js"></script>
     </body>
 </html>

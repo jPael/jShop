@@ -82,6 +82,84 @@ body {
     text-transform: capitalize;
 }
 
+#bottomBar {
+    padding: 0.1rem 0.2rem;
+}
 #actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#brush {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    cursor: pointer;
+}
+.brush {
     border: 1px solid black;
+    display: inline-flex;
+    height: 2rem;
+    width: 2rem;
+
+    font-size: 0.4rem;
+
+    align-items: center;
+    transition: 0.1s ease-in-out;
+    justify-content: center;
+}
+.brush:hover {
+    height: 2.1rem;
+    width: 2.1rem;
+}
+.brush:active {
+    height: 1.9rem;
+    width: 1.9rem;
+
+    box-shadow: 0px 0px 20px rgb(81, 255, 0);
+}
+#colors {
+    display: inline-flex;
+    margin: 0 0.5rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.colors {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+
+    box-shadow: 0px 0px 10px grey;
+
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+
+    margin: 0.1rem;
+}
+.colors:hover {
+    height: 2.1rem;
+    width: 2.1rem;
+}
+.colors:active {
+    height: 1.9rem;
+    width: 1.9rem;
+
+    box-shadow: 0px 0px 20px rgb(81, 255, 0);
+}
+
+#red {
+    background: red;
+}
+#blue {
+    background: blue;
+}
+#white {
+    background: white;
+}
+#black {
+    background: black;
 }
